@@ -1,32 +1,117 @@
 /* jost-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-*{
+
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   font-family: 'Jost';
 }
-.top-txt{
+
+ul, li, a {
+  text-decoration: none;
+}
+
+
+.top-txt {
   color: #707070;
   font-size: 14px;
   padding: 15px 30px 10px 0px;
 }
-.top-txt1{
+
+.top-txt1 {
   font-size: 16px;
   padding: 15px 0px 10px 0px;
   text-align: end;
 }
-.top-txt1 a i{
+
+.top-txt1 a i {
   color: #707070;
   padding-right: 7px;
   transition: .3s;
 }
-.top-txt1 a i:hover{
+
+.top-txt1 a i:hover {
   color: #ff6e68;
+}
+
+.main-menu li {
+  height: 100%;
+  position: relative;
+}
+
+.sub-menu {
+  left: 0%;
+  top: 40px;
+  position: absolute;
+  background-color: white;
+  display: none;
+  width: 150%;
+  z-index: 150;
+}
+
+.sub-menu li {
+  font-size: 15px;
+  border-bottom: 1px solid #479ec1 !important;
+  transition: .4s;
+  position: relative;
+}
+
+.main-menu li:hover > .sub-menu {
+  display: block;
+}
+
+.main-menu li a {
+  transition: .3s;
+}
+
+.main-menu li a:hover {
+  color: #479ec1 !important;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  bottom: 25%;
+  left: 15% !important;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+.carousel-caption h1{
+  font-size: 4rem;
+}
+.carousel-caption h1 span{
+  color: #479ec1;
+}
+.carousel-caption p{
+  padding-top: 1rem;
+  font-size: 1.375rem;
+}
+.carousel-caption p span{
+  color: #479ec1;
+}
+
+.carousel-caption div{
+  position: relative;
+}
+.carousel-caption div a{
+  color: #fff;
+  border: 1px solid white;
+  position: absolute;
+  padding: .80rem 2.5rem;
+  transition: .3s;
+}
+.carousel-caption div a:hover{
+  background-color: #479ec1;
+  border: 1px solid #479ec1;
 }
