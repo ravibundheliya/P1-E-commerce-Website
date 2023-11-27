@@ -16,7 +16,9 @@
   font-family: 'Jost';
 }
 
-ul, li, a {
+ul,
+li,
+a {
   text-decoration: none;
 }
 
@@ -65,7 +67,7 @@ ul, li, a {
   position: relative;
 }
 
-.main-menu li:hover > .sub-menu {
+.main-menu li:hover>.sub-menu {
   display: block;
 }
 
@@ -76,6 +78,7 @@ ul, li, a {
 .main-menu li a:hover {
   color: #479ec1 !important;
 }
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -87,31 +90,103 @@ ul, li, a {
   color: #fff;
   text-align: left;
 }
-.carousel-caption h1{
+
+.carousel-caption h1 {
   font-size: 4rem;
 }
-.carousel-caption h1 span{
-  color: #479ec1;
-}
-.carousel-caption p{
-  padding-top: 1rem;
-  font-size: 1.375rem;
-}
-.carousel-caption p span{
+
+.carousel-caption h1 span {
   color: #479ec1;
 }
 
-.carousel-caption div{
+.carousel-caption p {
+  padding-top: 1rem;
+  font-size: 1.375rem;
+}
+
+.carousel-caption p span {
+  color: #479ec1;
+}
+
+.carousel-caption div {
   position: relative;
 }
-.carousel-caption div a{
+.carousel-caption div a {
   color: #fff;
   border: 1px solid white;
   position: absolute;
   padding: .80rem 2.5rem;
   transition: .3s;
 }
-.carousel-caption div a:hover{
+.carousel-caption div a:hover {
   background-color: #479ec1;
   border: 1px solid #479ec1;
+}
+.btn-outline-info {
+  border-color: #479ec1 !important;
+  color: #479ec1;
+}
+.btn:hover {
+  background-color: #479ec1;
+  color: white;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  .carousel-caption div a {
+    padding: .50rem 1.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+    padding-top: .5rem;
+  }
+  .carousel-caption div a {
+    padding: .25rem 1rem;
+    font-size: .5rem;
+  }
+  .carousel-caption {
+    top: 10%;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.4rem;
+    padding-top: .1rem;
+  }
+  .carousel-caption div a {
+    padding: .125rem .5rem;
+    font-size: .25rem;
+  }
+  .carousel-caption {
+    top: 0%;
+  }
+  .top-txt {
+    font-size: .5rem;
+    padding:  5px 10px;
+  }
+  .top-txt1 {
+    font-size: .5rem;
+    padding: 5px;
+  }
 }
