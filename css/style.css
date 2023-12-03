@@ -130,6 +130,40 @@ a {
   background-color: #479ec1;
   color: white;
 }
+.sldinf a{
+  color: #707070;
+  transition: .2s;
+  cursor: pointer;
+}
+.sldinf a:hover{
+  color: #479ec1;
+}
+.owl-dots{
+  display: none;
+}
+.card{
+  border: 0px;
+}
+.card-img-top{
+  transition: .4s;
+}
+.card-bx{
+  overflow: hidden;
+}
+.card-img-top:hover{
+  scale: 1.1;
+}
+.card-text{
+  color: #707070;
+  transition: .3s;
+}
+.card-text:hover{
+  color: #479ec1;
+}
+
+
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .carousel-caption h1 {
     font-size: 3rem;
