@@ -9,83 +9,27 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     
     <script>
-        function sld1() {
-            var s1 = document.getElementById('all');
-            var s2 = document.getElementById('clothes');
-            var s3 = document.getElementById('shoes');
-            var s4 = document.getElementById('bags');
-            var slk1 = document.getElementById('clk1');
-            var slk2 = document.getElementById('clk2');
-            var slk3 = document.getElementById('clk3');
-            var slk4 = document.getElementById('clk4');
-            s1.style.display = "block";
-            s2.style.display = "none";
-            s3.style.display = "none";
-            s4.style.display = "none";
-            slk1.style.color = "#479ec1";
-            slk2.style.color = "#707070";
-            slk3.style.color = "#707070";
-            slk4.style.color = "#707070";
-        }
-        function sld2() {
-            var s1 = document.getElementById('all');
-            var s2 = document.getElementById('clothes');
-            var s3 = document.getElementById('shoes');
-            var s4 = document.getElementById('bags');
-            var slk1 = document.getElementById('clk1');
-            var slk2 = document.getElementById('clk2');
-            var slk3 = document.getElementById('clk3');
-            var slk4 = document.getElementById('clk4');
-            s1.style.display = "none";
-            s2.style.display = "block";
-            s3.style.display = "none";
-            s4.style.display = "none";
-            slk1.style.color = "#707070";
-            slk2.style.color = "#479ec1";
-            slk3.style.color = "#707070";
-            slk4.style.color = "#707070";
-        }
-        function sld3() {
-            var s1 = document.getElementById('all');
-            var s2 = document.getElementById('clothes');
-            var s3 = document.getElementById('shoes');
-            var s4 = document.getElementById('bags');
-            var slk1 = document.getElementById('clk1');
-            var slk2 = document.getElementById('clk2');
-            var slk3 = document.getElementById('clk3');
-            var slk4 = document.getElementById('clk4');
-            s1.style.display = "none";
-            s2.style.display = "none";
-            s3.style.display = "block";
-            s4.style.display = "none";
-            slk1.style.color = "#707070";
-            slk2.style.color = "#707070";
-            slk3.style.color = "#479ec1";
-            slk4.style.color = "#707070";
-        }
-        function sld4() {
-            var s1 = document.getElementById('all');
-            var s2 = document.getElementById('clothes');
-            var s3 = document.getElementById('shoes');
-            var s4 = document.getElementById('bags');
-            var slk1 = document.getElementById('clk1');
-            var slk2 = document.getElementById('clk2');
-            var slk3 = document.getElementById('clk3');
-            var slk4 = document.getElementById('clk4');
-            s1.style.display = "none";
-            s2.style.display = "none";
-            s3.style.display = "none";
-            s4.style.display = "block";
-            slk1.style.color = "#707070";
-            slk2.style.color = "#707070";
-            slk3.style.color = "#707070";
-            slk4.style.color = "#479ec1";
+        function switchTab(tabId) {
+            var tabs = ['all', 'clothes', 'shoes', 'bags'];
+            var links = ['clk1', 'clk2', 'clk3', 'clk4'];
+    
+            for (var i = 0; i < tabs.length; i++) {
+                var tab = document.getElementById(tabs[i]);
+                var link = document.getElementById(links[i]);
+                
+                if (i == tabId) {
+                    tab.style.display = "block";
+                    link.style.color = "#479ec1";
+                } else {
+                    tab.style.display = "none";
+                    link.style.color = "#707070";
+                }
+            }
         }
     </script>
 
@@ -298,10 +242,10 @@
                     New Arrivals
                 </h1>
                 <div class="h5 w-100 text-center mt-2 sldinf">
-                    <a class="sldinf1" id="clk1" onclick="sld1()" style="color: #479ec1;">All</a>
-                    <a class="ms-5" id="clk2" onclick="sld2()">Clothes</a>
-                    <a class="ms-5" id="clk3" onclick="sld3()">Shoes</a>
-                    <a class="ms-5" id="clk4" onclick="sld4()">Bags</a>
+                    <a class="sldinf1" id="clk1" onclick="switchTab(0)" style="color: #479ec1;">All</a>
+                    <a class="ms-5" id="clk2" onclick="switchTab(1)">Clothes</a>
+                    <a class="ms-5" id="clk3" onclick="switchTab(2)">Shoes</a>
+                    <a class="ms-5" id="clk4" onclick="switchTab(3)">Bags</a>
                 </div>
                 <!-- Make Parts of Sliders -->
                 <div class="sliders">
