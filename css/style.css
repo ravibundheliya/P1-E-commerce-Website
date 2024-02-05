@@ -199,6 +199,10 @@ a {
 .card:hover .card-icon{
   display: grid;
 }
+.card-i-1 i {
+  background-color: white;
+}
+
 
 
 
@@ -272,5 +276,8 @@ a {
   .top-txt1 {
     font-size: .5rem;
     padding: 5px;
+  }
+  .card-i-2, .card-i-3{
+    display: none;
   }
 }
