@@ -250,28 +250,38 @@ a {
 .card:hover .card-icon .card-i-3 {
   margin-top: 0px;
 }
-.cntup1{
+
+.cntup1 {
   position: relative;
 }
-.cnt1 h4{
+
+.cnt1 h4 {
   font-size: 40px;
 }
-.cnt_in{
+
+.cnt_in {
   position: absolute;
   right: 8%;
-  border: 37px solid white;
+  border-top: 37px solid white;
+  border-left: 37px solid white;
+  border-right
+  : 37px solid white;
   background-color: white;
 }
-.cardcss{
+
+.cardcss {
   width: 15rem;
 }
-.cntimg{
+
+.cntimg {
   position: relative;
 }
-.cntimg img{
+
+.cntimg img {
   border: 1px solid rgba(211, 211, 211, 0.5);
 }
-.cnt-txt-1{
+
+.cnt-txt-1 {
   position: absolute;
   bottom: 0%;
   right: 0%;
@@ -281,14 +291,32 @@ a {
   text-align: center;
   padding-top: 6%;
 }
-.cnt-ttl-1{
- font-size: 18px;
-} 
+
+.cnt-ttl-1 {
+  font-size: 18px;
+}
+.cnt_in1 {
+  position: absolute;
+  border-top: 37px solid white;
+  border-bottom: 37px solid white;
+  border-right: 37px solid white;
+  background-color: white;
+}
+.cntup2{
+  z-index: -1;
+  position: relative;
+}
+.cntup2 img{
+  position: absolute;
+  left: -10%;
+}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .cardcss{
+  .cardcss {
     width: 12rem;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .card {
     width: 12rem !important;
@@ -301,16 +329,20 @@ a {
   .carousel-caption p {
     font-size: 1.1rem;
   }
-  .cardcss{
+
+  .cardcss {
     width: 10rem !important;
   }
-  .cnt_in{
+
+  .cnt_in {
     right: 8%;
   }
-  .cnt1 h4{
+
+  .cnt1 h4 {
     font-size: 30px;
   }
-  .cnt1 p{
+
+  .cnt1 p {
     font-size: 14px;
   }
 }
@@ -331,28 +363,36 @@ a {
   .carousel-caption div a {
     padding: .50rem 1.5rem;
   }
-  .cardcss{
+
+  .cardcss {
     width: 8rem !important;
   }
-  .cnt_in{
+
+  .cnt_in {
     right: 5%;
   }
-  .cnt1 h4{
+
+  .cnt1 h4 {
     font-size: 25px;
   }
-  .cnt1 p{
+
+  .cnt1 p {
     font-size: 12px;
   }
-  .card-text-css{
+
+  .card-text-css {
     display: none;
   }
-  .cardcss .card-body{
+
+  .cardcss .card-body {
     padding: 0px 10px 5px 10px;
   }
-  .cnt_in{
+
+  .cnt_in {
     border: 20px solid white !important;
   }
-  .card-title-css{
+
+  .card-title-css {
     font-size: 15px !important;
   }
 }
@@ -380,11 +420,13 @@ a {
     top: 10%;
   }
 }
-@media (max-width: 1200px){
-  .hrt{
+
+@media (max-width: 1200px) {
+  .hrt {
     padding-left: 2rem !important;
   }
 }
+
 @media (max-width: 576px) {
   .card {
     width: 8rem !important;
@@ -417,35 +459,45 @@ a {
     font-size: .5rem;
     padding: 5px;
   }
+
   .card-i-2,
   .card-i-3 {
     display: none;
   }
-  .card-text{
+
+  .card-text {
     display: none;
   }
-  .card-title{
+
+  .card-title {
     font-size: 16px;
   }
-  .sldinf a{
+
+  .sldinf a {
     font-size: 16px !important;
   }
 }
 
 @media (max-width: 400px) {
-  .carousel-control-prev-icon{
+  .carousel-control-prev-icon {
     display: none;
   }
-  .carousel-control-next-icon{
+
+  .carousel-control-next-icon {
     display: none;
   }
-  .carousel-indicators{
+
+  .carousel-indicators {
     display: none;
   }
-  #clk2,#clk3,#clk4{
+
+  #clk2,
+  #clk3,
+  #clk4 {
     margin-left: 15px !important;
   }
-  .bsk{
+
+  .bsk {
     font-size: 13px;
   }
 }
