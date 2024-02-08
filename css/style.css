@@ -250,9 +250,45 @@ a {
 .card:hover .card-icon .card-i-3 {
   margin-top: 0px;
 }
-
-
-
+.cntup1{
+  position: relative;
+}
+.cnt1 h4{
+  font-size: 40px;
+}
+.cnt_in{
+  position: absolute;
+  right: 8%;
+  border: 37px solid white;
+  background-color: white;
+}
+.cardcss{
+  width: 15rem;
+}
+.cntimg{
+  position: relative;
+}
+.cntimg img{
+  border: 1px solid rgba(211, 211, 211, 0.5);
+}
+.cnt-txt-1{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 20%;
+  height: 15%;
+  background-color: #479ec1;
+  text-align: center;
+  padding-top: 6%;
+}
+.cnt-ttl-1{
+ font-size: 18px;
+} 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .cardcss{
+    width: 12rem;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
   .card {
     width: 12rem !important;
@@ -264,6 +300,18 @@ a {
 
   .carousel-caption p {
     font-size: 1.1rem;
+  }
+  .cardcss{
+    width: 10rem !important;
+  }
+  .cnt_in{
+    right: 8%;
+  }
+  .cnt1 h4{
+    font-size: 30px;
+  }
+  .cnt1 p{
+    font-size: 14px;
   }
 }
 
@@ -282,6 +330,30 @@ a {
 
   .carousel-caption div a {
     padding: .50rem 1.5rem;
+  }
+  .cardcss{
+    width: 8rem !important;
+  }
+  .cnt_in{
+    right: 5%;
+  }
+  .cnt1 h4{
+    font-size: 25px;
+  }
+  .cnt1 p{
+    font-size: 12px;
+  }
+  .card-text-css{
+    display: none;
+  }
+  .cardcss .card-body{
+    padding: 0px 10px 5px 10px;
+  }
+  .cnt_in{
+    border: 20px solid white !important;
+  }
+  .card-title-css{
+    font-size: 15px !important;
   }
 }
 
@@ -372,5 +444,8 @@ a {
   }
   #clk2,#clk3,#clk4{
     margin-left: 15px !important;
+  }
+  .bsk{
+    font-size: 13px;
   }
 }
