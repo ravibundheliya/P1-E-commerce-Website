@@ -359,6 +359,7 @@ a {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  overflow: hidden;
 }
 .flip-card-back {
   background-color: #479ec1;
