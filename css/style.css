@@ -251,9 +251,6 @@ a {
   margin-top: 0px;
 }
 
-.cntup1 {
-  position: relative;
-}
 
 .cnt1 h4 {
   font-size: 40px;
@@ -264,8 +261,7 @@ a {
   right: 8%;
   border-top: 37px solid white;
   border-left: 37px solid white;
-  border-right
-  : 37px solid white;
+  border-right: 37px solid white;
   background-color: white;
 }
 
@@ -273,9 +269,6 @@ a {
   width: 15rem;
 }
 
-.cntimg {
-  position: relative;
-}
 
 .cntimg img {
   border: 1px solid rgba(211, 211, 211, 0.5);
@@ -295,20 +288,51 @@ a {
 .cnt-ttl-1 {
   font-size: 18px;
 }
+
 .cnt_in1 {
-  position: absolute;
   border-top: 37px solid white;
   border-bottom: 37px solid white;
   border-right: 37px solid white;
   background-color: white;
 }
-.cntup2{
+
+.cntup2 {
   z-index: -1;
   position: relative;
 }
-.cntup2 img{
+
+.cntup2 img {
   position: absolute;
   left: -10%;
+}
+
+.tst .tst-box i {
+  font-size: 50px;
+  color: #479ec1;
+  margin-right: 1.5rem;
+}
+
+.tst .tst-box .tst_inner{
+  width: 95%;
+  border: 1px solid rgba(211, 211, 211, 0.7);
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.tst_in{
+  padding-top: 5%;
+}
+
+.tst_in h1 {
+  font-size: 25px;
+}
+
+.tst_in p {
+  font-size: 16px;
+  color: #707070;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -395,6 +419,20 @@ a {
   .card-title-css {
     font-size: 15px !important;
   }
+
+  
+
+  .tst .tst-box i {
+    font-size: 40px;
+  }
+
+  .tst_in h1 {
+    font-size: 16px;
+  }
+  
+  .tst_in p {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -418,6 +456,12 @@ a {
 
   .carousel-caption {
     top: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tst .tst-box .tst_inner{
+    width: 100%;
   }
 }
 
