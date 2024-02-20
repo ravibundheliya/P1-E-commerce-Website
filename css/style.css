@@ -251,7 +251,9 @@ a {
   margin-top: 0px;
 }
 
-
+.cntimg {
+  position: relative;
+}
 .cnt1 h4 {
   font-size: 40px;
 }
@@ -394,7 +396,7 @@ a {
   font-weight: 900;
 }
 .flip-card-back h3:hover{
-  color: rgb(105, 105, 105);
+  color: #6f2d2b;
 }
 .flip-card-back a:hover{
   color: black;
